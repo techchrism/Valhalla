@@ -3,7 +3,7 @@
 #define VALHALLA2_FRAMETEST_H
 
 
-#include "../frames/GuiFrame.h"
+#include "../frames/structure/GuiFrame.h"
 #include <string>
 #include <iostream>
 using namespace std;

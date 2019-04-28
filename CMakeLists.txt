@@ -4,4 +4,4 @@ project(Valhalla2)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 
-add_executable(Valhalla2 main.cpp structures/StackNode.h structures/Stack.h gui/frames/GuiFrameStack.cpp gui/frames/GuiFrameStack.h gui/frames/GuiFrame.cpp gui/frames/GuiFrame.h gui/frames/GuiFrameStackInterface.h gui/test/FrameTest.cpp gui/test/FrameTest.h structures/StackInterface.h)
+add_executable(Valhalla2 main.cpp structures/StackNode.h structures/Stack.h gui/frames/structure/GuiFrameStack.cpp gui/frames/structure/GuiFrameStack.h gui/frames/structure/GuiFrame.cpp gui/frames/structure/GuiFrame.h gui/frames/structure/GuiFrameStackInterface.h gui/test/FrameTest.cpp gui/test/FrameTest.h gui/frames/abstract/BasicGuiFrame.cpp gui/frames/abstract/BasicGuiFrame.h gui/frames/types/DemoFrame.cpp gui/frames/types/DemoFrame.h gui/frames/util/ConsoleUtil.cpp gui/frames/util/ConsoleUtil.h)

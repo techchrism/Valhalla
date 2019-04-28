@@ -4,6 +4,17 @@
 
 
 #include "GuiFrameStackInterface.h"
+#include <windows.h>
+
+#define KEY_UP 0x26
+#define KEY_DOWN 0x28
+#define KEY_LEFT 0x25
+#define KEY_RIGHT 0x27
+
+#define KEY_BACKSPACE 8
+#define KEY_DELETE 127
+#define KEY_ENTER 13
+#define KEY_ESC 27
 
 class GuiFrame
 {
@@ -32,6 +43,18 @@ public:
     void onDeactivate();
     void onRemove();
     void onAdd(GuiFrameStackInterface<GuiFrame*>* guiFrameStackInterface);
+
+    // Input events
+    virtual void handleInput(int code) {};
+    virtual void handleArrow(int code) {};
+    virtual void handleCtrl(int code) {};
+    virtual void handleMouse(MOUSE_EVENT_RECORD m) {};
+
+    // Animation events
+    virtual void handleAnimationFrame(unsigned long frame) {};
+
+    // Resize events
+    virtual void onResize() {};
 };
 
 
