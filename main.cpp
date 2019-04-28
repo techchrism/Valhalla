@@ -22,7 +22,7 @@ void runStackTests()
     cout << "Stack contents:" << endl;
     while(!intStack.isEmpty())
     {
-        cout << intStack.pop() << endl;
+        cout << intStack.pop() << " ";
     }
     cout << "Empty stack length: " << intStack.getLength() << endl;
 }
