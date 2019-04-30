@@ -13,15 +13,18 @@ class Options
 private:
     OptionNode* start;
     OptionNode* end;
+    string text;
 public:
     OptionNode* selected;
 
     Options();
     ~Options();
 
+    void setText(string text);
     void addOption(string text, Choice* choice);
     int getLength();
     OptionNode* getStart();
+    string getText();
 };
 
 

@@ -1,6 +1,7 @@
 
 #include "MainMenuFrame.h"
 #include "DemoFrame.h"
+#include "../../../game/GameSetup.h"
 
 MainMenuFrame::MainMenuFrame()
 {
@@ -49,6 +50,6 @@ void MainMenuFrame::handleInput(int code)
 {
     if(code == KEY_ENTER)
     {
-        guiFrameStackInterface->push(new DemoFrame());
+        guiFrameStackInterface->push(GameSetup::getStartingOptions());
     }
 }

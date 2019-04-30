@@ -50,3 +50,13 @@ OptionNode* Options::getStart()
 {
     return start;
 }
+
+void Options::setText(string text)
+{
+    this->text = text;
+}
+
+string Options::getText()
+{
+    return text;
+}
