@@ -4,7 +4,6 @@
 
 
 #include "../state/GameState.h"
-#include "ChoicesStack.h"
 
 #define CHOICE_SPECIAL_TRAVELBACK 1
 #define CHOICE_SPECIAL_NONE 0

@@ -4,6 +4,7 @@
 #include "gui/test/FrameTest.h"
 #include "gui/frames/types/DemoFrame.h"
 #include "gui/frames/types/PortalFrame.h"
+#include "gui/frames/types/MainMenuFrame.h"
 #include <windows.h>
 
 using namespace std;
@@ -35,7 +36,8 @@ int main()
     GuiFrameStack displayManager;
 
     // Push a demo frame to test things
-    displayManager.push(new DemoFrame());
+    displayManager.push(new MainMenuFrame());
+    //displayManager.push(new DemoFrame());
 
     // Start animation worker thread
     CreateThread(nullptr, 0, threadedFunction, &displayManager, 0, nullptr);
