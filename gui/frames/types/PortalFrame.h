@@ -16,9 +16,6 @@ private:
 public:
     PortalFrame();
 
-    // Override the add handler
-    //void addHandler() override;
-
     // Listen for animation ticks
     void handleAnimationFrame(unsigned long tick) override;
 };
