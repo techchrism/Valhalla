@@ -8,6 +8,9 @@ GuiFrameStack::GuiFrameStack()
 
 void GuiFrameStack::push(GuiFrame* frame)
 {
+    // Reset the animation tick
+    tick = 0;
+
     // Call the deactivate handler for the old top frame and the add handler for the new one
     if(!frames.isEmpty())
     {
@@ -29,6 +32,9 @@ GuiFrame* GuiFrameStack::pop()
         frames.top()->onActivate();
     }
 
+    // Reset the animation tick
+    tick = 0;
+
     return old;
 }
 
@@ -45,6 +51,15 @@ bool GuiFrameStack::isEmpty()
 int GuiFrameStack::getLength()
 {
     return frames.getLength();
+}
+
+void GuiFrameStack::handleAnimationTick()
+{
+    if(!frames.isEmpty())
+    {
+        frames.top()->handleAnimationFrame(tick);
+        tick++;
+    }
 }
 
 void GuiFrameStack::handleEvents()

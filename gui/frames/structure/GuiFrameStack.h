@@ -12,10 +12,12 @@ class GuiFrameStack : public GuiFrameStackInterface<GuiFrame*>
 private:
     Stack<GuiFrame*> frames;
     HANDLE inputHandle;
+    unsigned long tick = 0;
 public:
     GuiFrameStack();
 
     void handleEvents();
+    void handleAnimationTick();
 
     bool isEmpty() override;
     int getLength() override;

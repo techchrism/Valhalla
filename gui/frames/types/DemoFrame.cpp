@@ -40,3 +40,8 @@ void DemoFrame::handleInput(int code)
         ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got input");
     }
 }
+
+void DemoFrame::handleAnimationFrame(unsigned long tick)
+{
+    ConsoleUtil::printString(screenBuffer, lineCounter++, 0, ".");
+}

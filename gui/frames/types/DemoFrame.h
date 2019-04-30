@@ -18,6 +18,9 @@ public:
     void addHandler() override;
     void handleInput(int code) override;
     void handleArrow(int code) override;
+
+    // Listen for animation ticks
+    void handleAnimationFrame(unsigned long tick) override;
 };
 
 #endif //VALHALLA2_DEMOFRAME_H
