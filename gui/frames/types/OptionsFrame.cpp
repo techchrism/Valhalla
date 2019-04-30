@@ -37,6 +37,27 @@ void OptionsFrame::handleInput(int code)
         // This prints all the text at once
         while(printNextChar()){}
     }
+    else
+    {
+        // Get the number that was pressed (by subtracting 48 from the ascii code)
+        int selection = code - 48;
+
+        // Make sure it's in range
+        if(selection <= 0 || selection > options.getLength())
+        {
+            return;
+        }
+
+        // Get the option from that number
+        OptionNode* current = options.getStart();
+        for(int i = 0; i < selection - 1; i++)
+        {
+            current = current->next;
+        }
+
+        // Run the action
+        current->action->onAction(&state, guiFrameStackInterface);
+    }
 }
 
 bool OptionsFrame::printNextChar()
