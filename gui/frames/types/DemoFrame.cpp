@@ -1,6 +1,7 @@
 
 #include "DemoFrame.h"
 #include "PortalFrame.h"
+#include "LightningFrame.h"
 
 DemoFrame::DemoFrame()
 {
@@ -35,7 +36,8 @@ void DemoFrame::handleInput(int code)
     else if(code == KEY_ENTER)
     {
         // Display a portal
-        guiFrameStackInterface->push(new PortalFrame());
+        //guiFrameStackInterface->push(new PortalFrame());
+        guiFrameStackInterface->push(new LightningFrame());
     }
     else
     {
