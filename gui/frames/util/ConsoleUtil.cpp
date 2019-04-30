@@ -49,3 +49,36 @@ short ConsoleUtil::getProportionalHeight(HANDLE screenBuffer, double fraction, s
 {
     return ((double) getBufferHeight(screenBuffer) * fraction) - (height / 2);
 }
+
+void ConsoleUtil::shakeConsole(int scale, int amount)
+{
+    // Get the window handle and position
+    HWND win = GetConsoleWindow();
+    RECT consolePos;
+    GetWindowRect(win, &consolePos);
+
+    int width = consolePos.right - consolePos.left;
+    int height = consolePos.bottom - consolePos.top;
+
+    // Change the window position randomly to simulate shaking
+    for(int i = 0; i < amount; i++)
+    {
+        int changeX = (rand() % static_cast<int>(scale + 1)) - (scale / 2);
+        int changeY = (rand() % static_cast<int>(scale + 1)) - (scale / 2);
+        MoveWindow(win, consolePos.left + changeX, consolePos.top + changeY, width, height, true);
+        Sleep(50);
+    }
+
+    // Reset back to it's starting position
+    MoveWindow(win, consolePos.left, consolePos.top, width, height, true);
+}
+
+void ConsoleUtil::shakeConsoleSmall()
+{
+    shakeConsole(35, 3);
+}
+
+void ConsoleUtil::shakeConsoleLarge()
+{
+    shakeConsole(100, 6);
+}

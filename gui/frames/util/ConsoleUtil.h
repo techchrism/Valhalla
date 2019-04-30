@@ -19,6 +19,10 @@ public:
 
     static short getProportionalLength(HANDLE screenBuffer, double fraction, short length);
     static short getProportionalHeight(HANDLE screenBuffer, double fraction, short height);
+
+    static void shakeConsole(int scale, int amount);
+    static void shakeConsoleSmall();
+    static void shakeConsoleLarge();
 };
 
 

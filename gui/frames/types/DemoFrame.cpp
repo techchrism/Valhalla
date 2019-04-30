@@ -23,7 +23,7 @@ void DemoFrame::addHandler()
 void DemoFrame::handleArrow(int code)
 {
     // Print to the console when an arrow is pressed
-    ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got arrow");
+    //ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got arrow");
 }
 
 void DemoFrame::handleInput(int code)
@@ -37,11 +37,12 @@ void DemoFrame::handleInput(int code)
     else
     {
         // If it's not escape, print to the screen about getting input
-        ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got input");
+        //ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got input");
+        ConsoleUtil::shakeConsoleSmall();
     }
 }
 
 void DemoFrame::handleAnimationFrame(unsigned long tick)
 {
-    ConsoleUtil::printString(screenBuffer, lineCounter++, 0, ".");
+    //ConsoleUtil::printString(screenBuffer, lineCounter++, 0, ".");
 }
