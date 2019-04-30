@@ -2,10 +2,8 @@
 #ifndef VALHALLA2_LIGHTNINGFRAME_H
 #define VALHALLA2_LIGHTNINGFRAME_H
 
-
 #include "../abstract/BasicGuiFrame.h"
 #include "../util/ConsoleUtil.h"
-
 
 class LightningFrame : public BasicGuiFrame
 {
