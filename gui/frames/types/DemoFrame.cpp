@@ -12,12 +12,14 @@ DemoFrame::DemoFrame()
 
 void DemoFrame::addHandler()
 {
+    // Sets this screen buffer as the active one and prints "Hello world" initially
     SetConsoleActiveScreenBuffer(screenBuffer);
     ConsoleUtil::printString(screenBuffer, 0, 0, "Hello world!");
 }
 
 void DemoFrame::handleArrow(int code)
 {
+    // Print to the console when an arrow is pressed
     ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got arrow");
 }
 
@@ -25,10 +27,13 @@ void DemoFrame::handleInput(int code)
 {
     if(code == KEY_ESC)
     {
+        // Pop this item if the escape key is pressed
+        // If this is the only frame in the stack, this will exit the program
         guiFrameStackInterface->pop();
     }
     else
     {
+        // If it's not escape, print to the screen about getting input
         ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got input");
     }
 }

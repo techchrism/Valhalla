@@ -49,7 +49,7 @@ int GuiFrameStack::getLength()
 
 void GuiFrameStack::handleEvents()
 {
-    // Get console events (NOTE: blocking operation)
+    // Get console events (NOTE: this is a blocking operation)
     DWORD numRead;
     INPUT_RECORD inBuf[128];
     ReadConsoleInput(inputHandle, inBuf, 128, &numRead);
@@ -63,6 +63,7 @@ void GuiFrameStack::handleEvents()
             break;
         }
 
+        // Send the event to what's on top of the stack
         switch(inBuf[i].EventType)
         {
             case KEY_EVENT:

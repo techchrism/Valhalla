@@ -11,7 +11,8 @@ using namespace std;
 class ConsoleUtil
 {
 public:
-    static void printString(HANDLE screenBuffer, unsigned short x, unsigned short y, string data);
+    static void writeOutput(HANDLE screenBuffer, short x, short y, CHAR_INFO* text, short columns, short rows);
+    static void printString(HANDLE screenBuffer, short x, short y, string data);
 };
 
 
