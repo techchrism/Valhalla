@@ -1,6 +1,23 @@
 
 #include "ConsoleUtil.h"
 
+HANDLE ConsoleUtil::generateBuffer()
+{
+    return CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE,
+                                     FILE_SHARE_READ | FILE_SHARE_WRITE,
+                                     NULL,
+                                     CONSOLE_TEXTMODE_BUFFER,
+                                     NULL);
+}
+
+void ConsoleUtil::hideCursor(HANDLE screenBuffer)
+{
+    CONSOLE_CURSOR_INFO cursor;
+    cursor.bVisible = false;
+    cursor.dwSize = 1;
+    SetConsoleCursorInfo(screenBuffer, &cursor);
+}
+
 void ConsoleUtil::writeOutput(HANDLE screenBuffer, short x, short y, CHAR_INFO *text,
                               short columns, short rows)
 {

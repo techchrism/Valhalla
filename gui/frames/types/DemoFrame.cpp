@@ -3,11 +3,8 @@
 
 DemoFrame::DemoFrame()
 {
-    screenBuffer = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE,
-                                             FILE_SHARE_READ | FILE_SHARE_WRITE,
-                                             NULL,
-                                             CONSOLE_TEXTMODE_BUFFER,
-                                             NULL);
+    screenBuffer = ConsoleUtil::generateBuffer();
+    ConsoleUtil::hideCursor(screenBuffer);
 }
 
 void DemoFrame::addHandler()
