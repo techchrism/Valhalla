@@ -67,6 +67,31 @@ bool OptionsFrame::printNextChar()
             currentX++;
         }
         currentChar++;
+
+        // If this was the last character, print the options
+        if(currentChar == options.getText().length())
+        {
+            int optionNum = 1;
+            short y = currentY + 2;
+            short x = -1;
+            OptionNode* current = options.getStart();
+            while(current != nullptr)
+            {
+                string text = to_string(optionNum) + ") " + current->text;
+
+                // Set the x value only once (using -1 as a flag)
+                if(x == -1)
+                {
+                    x = ConsoleUtil::getProportionalLength(screenBuffer, 0.5, text.length());
+                }
+
+                ConsoleUtil::printString(screenBuffer, x, y, text);
+
+                y++;
+                optionNum++;
+                current = current->next;
+            }
+        }
     }
 }
 

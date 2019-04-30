@@ -21,7 +21,7 @@ public:
     ~Options();
 
     void setText(string text);
-    void addOption(string text, Choice* choice);
+    void addOption(string text, Action* action);
     int getLength();
     OptionNode* getStart();
     string getText();

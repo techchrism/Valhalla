@@ -1,14 +1,14 @@
 
 #include "OptionNode.h"
 
-OptionNode::OptionNode(string text, Choice *choice)
+OptionNode::OptionNode(string text, Action* action)
 {
     this->text = text;
-    this->choice = choice;
+    this->action = action;
     this->next = nullptr;
 }
 
 OptionNode::~OptionNode()
 {
-    delete choice;
+    delete action;
 }

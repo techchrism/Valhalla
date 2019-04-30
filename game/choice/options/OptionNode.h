@@ -4,6 +4,7 @@
 
 #include <string>
 #include "../Choice.h"
+#include "../Action.h"
 
 using namespace std;
 
@@ -12,9 +13,9 @@ class OptionNode
 public:
     OptionNode* next;
     string text;
-    Choice* choice;
+    Action* action;
 
-    OptionNode(string text, Choice* choice);
+    OptionNode(string text, Action* choice);
     ~OptionNode();
 };
 

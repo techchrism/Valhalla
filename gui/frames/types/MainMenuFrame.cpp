@@ -50,6 +50,7 @@ void MainMenuFrame::handleInput(int code)
 {
     if(code == KEY_ENTER)
     {
-        guiFrameStackInterface->push(GameSetup::getStartingOptions());
+        GuiFrame* starting = GameSetup::getStartingOptions();
+        guiFrameStackInterface->push(starting);
     }
 }

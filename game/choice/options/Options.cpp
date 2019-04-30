@@ -9,22 +9,22 @@ Options::Options()
 Options::~Options()
 {
     // Delete the stack to avoid memory leaks
-    OptionNode* current = start;
+    /*OptionNode* current = start;
     while(current != nullptr)
     {
         OptionNode* next = current->next;
         delete current;
         current = next;
-    }
+    }*/
 }
 
-void Options::addOption(string text, Choice *choice)
+void Options::addOption(string text, Action *action)
 {
     // Add the data as a new node
-    OptionNode* node = new OptionNode(text, choice);
+    OptionNode* node = new OptionNode(text, action);
     if(end == nullptr)
     {
-        start = end = node;
+        start = end =node;
     }
     else
     {
