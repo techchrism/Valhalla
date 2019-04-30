@@ -14,7 +14,10 @@ void DemoFrame::addHandler()
 {
     // Sets this screen buffer as the active one and prints "Hello world" initially
     SetConsoleActiveScreenBuffer(screenBuffer);
-    ConsoleUtil::printString(screenBuffer, 0, 0, "Hello world!");
+    string text = "Hello world!";
+    short x = ConsoleUtil::getProportionalLength(screenBuffer, 0.5, text.length());
+    short y = ConsoleUtil::getProportionalHeight(screenBuffer, 0.5, 1);
+    ConsoleUtil::printString(screenBuffer, x, y, text);
 }
 
 void DemoFrame::handleArrow(int code)
