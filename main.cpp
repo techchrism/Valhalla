@@ -3,6 +3,7 @@
 #include "gui/frames/structure/GuiFrameStack.h"
 #include "gui/test/FrameTest.h"
 #include "gui/frames/types/DemoFrame.h"
+#include "gui/frames/types/PortalFrame.h"
 #include <windows.h>
 
 using namespace std;

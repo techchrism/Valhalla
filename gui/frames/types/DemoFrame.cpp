@@ -1,5 +1,6 @@
 
 #include "DemoFrame.h"
+#include "PortalFrame.h"
 
 DemoFrame::DemoFrame()
 {
@@ -31,10 +32,14 @@ void DemoFrame::handleInput(int code)
         // If this is the only frame in the stack, this will exit the program
         guiFrameStackInterface->pop();
     }
+    else if(code == KEY_ENTER)
+    {
+        // Display a portal
+        guiFrameStackInterface->push(new PortalFrame());
+    }
     else
     {
         // If it's not escape, print to the screen about getting input
-        //ConsoleUtil::printString(screenBuffer, 0, lineCounter++, "Got input");
         ConsoleUtil::shakeConsoleSmall();
     }
 }
