@@ -11,6 +11,7 @@ public:
 
     virtual T pop() = 0;
     virtual T top() = 0;
+    virtual void pop(int amount) = 0;
     virtual void push(T frame) = 0;
 };
 

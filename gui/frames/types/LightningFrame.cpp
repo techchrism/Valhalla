@@ -9,7 +9,7 @@ LightningFrame::LightningFrame()
 
 void LightningFrame::displayBolt()
 {
-    short width = 3;
+    short width = 2;
     short height = ConsoleUtil::getBufferHeight(screenBuffer) - 1;
     // boltpos is a double from 0 to 1. this turns it into an actual x position
     short x = (ConsoleUtil::getBufferWidth(screenBuffer) * boltPos);
@@ -30,7 +30,7 @@ void LightningFrame::displayBolt()
             else if(phase % 2 == 0)
             {
                 boltFragment[i].Char.AsciiChar = '|';
-                boltFragment[i].Attributes = BG_YELLOW | FG_WHITE;
+                boltFragment[i].Attributes = BG_CYAN | FG_WHITE;
             }
             else if(phase % 2 == 1)
             {

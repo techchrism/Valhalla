@@ -38,6 +38,14 @@ GuiFrame* GuiFrameStack::pop()
     return old;
 }
 
+void GuiFrameStack::pop(int amount)
+{
+    for(int i = 0; i < amount; i++)
+    {
+        pop();
+    }
+}
+
 GuiFrame* GuiFrameStack::top()
 {
     return frames.top();

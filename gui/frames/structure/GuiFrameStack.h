@@ -23,6 +23,7 @@ public:
     int getLength() override;
 
     GuiFrame* pop() override;
+    void pop(int amount) override;
     GuiFrame* top() override;
     void push(GuiFrame* frame) override;
 };
