@@ -1,10 +1,11 @@
 
 #include "LightningFrame.h"
 
-LightningFrame::LightningFrame()
+LightningFrame::LightningFrame(GuiFrame* frame)
 {
     screenBuffer = ConsoleUtil::generateBuffer();
     ConsoleUtil::hideCursor(screenBuffer);
+    this->next = frame;
 }
 
 void LightningFrame::displayBolt()
@@ -93,6 +94,7 @@ void LightningFrame::handleAnimationFrame(unsigned long tick)
     // End the animation after 250 ticks
     if(tick == 250)
     {
-        guiFrameStackInterface->pop();
+        //guiFrameStackInterface->pop();
+        guiFrameStackInterface->push(next);
     }
 }

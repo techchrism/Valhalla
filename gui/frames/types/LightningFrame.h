@@ -11,8 +11,10 @@ private:
     double boltPos;
     int phase;
     void displayBolt();
+
+    GuiFrame* next;
 public:
-    LightningFrame();
+    LightningFrame(GuiFrame* next);
 
     void handleAnimationFrame(unsigned long tick) override;
 };

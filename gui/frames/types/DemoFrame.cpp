@@ -37,7 +37,7 @@ void DemoFrame::handleInput(int code)
     {
         // Display a portal
         //guiFrameStackInterface->push(new PortalFrame());
-        guiFrameStackInterface->push(new LightningFrame());
+        //guiFrameStackInterface->push(new LightningFrame());
     }
     else
     {

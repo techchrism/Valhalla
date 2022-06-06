@@ -48,7 +48,12 @@ void PortalFrame::render()
     // Once the scaling factor has reached this point, exit the portal
     if(scale >= 4.5)
     {
-        guiFrameStackInterface->pop();
+        int popAmount = 3;
+        if(popAmount >= guiFrameStackInterface->getLength())
+        {
+            popAmount = guiFrameStackInterface->getLength() - 1;
+        }
+        guiFrameStackInterface->pop(popAmount);
     }
 }
 
