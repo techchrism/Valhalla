@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_GUIFRAME_H
-#define VALHALLA2_GUIFRAME_H
+#ifndef VALHALLA_GUIFRAME_H
+#define VALHALLA_GUIFRAME_H
 
 
 #include "GuiFrameStackInterface.h"
@@ -58,4 +58,4 @@ public:
 };
 
 
-#endif //VALHALLA2_GUIFRAME_H
+#endif //VALHALLA_GUIFRAME_H

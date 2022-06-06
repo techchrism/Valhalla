@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_GAMESTATE_H
-#define VALHALLA2_GAMESTATE_H
+#ifndef VALHALLA_GAMESTATE_H
+#define VALHALLA_GAMESTATE_H
 
 
 #include "../entities/Entity.h"
@@ -16,4 +16,4 @@ public:
 };
 
 
-#endif //VALHALLA2_GAMESTATE_H
+#endif //VALHALLA_GAMESTATE_H

@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_CHOICE_H
-#define VALHALLA2_CHOICE_H
+#ifndef VALHALLA_CHOICE_H
+#define VALHALLA_CHOICE_H
 
 
 #include "../state/GameState.h"
@@ -16,4 +16,4 @@ public:
 };
 
 
-#endif //VALHALLA2_CHOICE_H
+#endif //VALHALLA_CHOICE_H

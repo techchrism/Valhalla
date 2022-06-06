@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_CHOICESSTACK_H
-#define VALHALLA2_CHOICESSTACK_H
+#ifndef VALHALLA_CHOICESSTACK_H
+#define VALHALLA_CHOICESSTACK_H
 
 
 #include "Choice.h"
@@ -23,4 +23,4 @@ public:
 };
 
 
-#endif //VALHALLA2_CHOICESSTACK_H
+#endif //VALHALLA_CHOICESSTACK_H

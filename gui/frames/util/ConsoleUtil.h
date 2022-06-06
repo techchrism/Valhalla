@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_CONSOLEUTIL_H
-#define VALHALLA2_CONSOLEUTIL_H
+#ifndef VALHALLA_CONSOLEUTIL_H
+#define VALHALLA_CONSOLEUTIL_H
 
 #include <windows.h>
 #include <string>
@@ -61,4 +61,4 @@ public:
 };
 
 
-#endif //VALHALLA2_CONSOLEUTIL_H
+#endif //VALHALLA_CONSOLEUTIL_H

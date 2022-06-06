@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_OPTIONSFRAME_H
-#define VALHALLA2_OPTIONSFRAME_H
+#ifndef VALHALLA_OPTIONSFRAME_H
+#define VALHALLA_OPTIONSFRAME_H
 
 
 #include "../../../game/state/GameState.h"
@@ -33,4 +33,4 @@ public:
 };
 
 
-#endif //VALHALLA2_OPTIONSFRAME_H
+#endif //VALHALLA_OPTIONSFRAME_H

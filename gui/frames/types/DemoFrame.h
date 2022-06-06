@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_DEMOFRAME_H
-#define VALHALLA2_DEMOFRAME_H
+#ifndef VALHALLA_DEMOFRAME_H
+#define VALHALLA_DEMOFRAME_H
 
 
 #include "../abstract/BasicGuiFrame.h"
@@ -23,4 +23,4 @@ public:
     void handleAnimationFrame(unsigned long tick) override;
 };
 
-#endif //VALHALLA2_DEMOFRAME_H
+#endif //VALHALLA_DEMOFRAME_H

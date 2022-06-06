@@ -1,5 +1,5 @@
-#ifndef VALHALLA2_STACK_H
-#define VALHALLA2_STACK_H
+#ifndef VALHALLA_STACK_H
+#define VALHALLA_STACK_H
 
 #include "StackNode.h"
 
@@ -79,4 +79,4 @@ public:
     }
 };
 
-#endif //VALHALLA2_STACK_H
+#endif //VALHALLA_STACK_H

@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_BASICGUIFRAME_H
-#define VALHALLA2_BASICGUIFRAME_H
+#ifndef VALHALLA_BASICGUIFRAME_H
+#define VALHALLA_BASICGUIFRAME_H
 
 
 #include "../structure/GuiFrame.h"
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //VALHALLA2_BASICGUIFRAME_H
+#endif //VALHALLA_BASICGUIFRAME_H

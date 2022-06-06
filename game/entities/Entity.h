@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_ENTITY_H
-#define VALHALLA2_ENTITY_H
+#ifndef VALHALLA_ENTITY_H
+#define VALHALLA_ENTITY_H
 
 
 class Entity
@@ -9,4 +9,4 @@ class Entity
 };
 
 
-#endif //VALHALLA2_ENTITY_H
+#endif //VALHALLA_ENTITY_H

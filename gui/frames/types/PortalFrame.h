@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_PORTALFRAME_H
-#define VALHALLA2_PORTALFRAME_H
+#ifndef VALHALLA_PORTALFRAME_H
+#define VALHALLA_PORTALFRAME_H
 
 #include "../abstract/BasicGuiFrame.h"
 #include "../util/ConsoleUtil.h"
@@ -21,4 +21,4 @@ public:
 };
 
 
-#endif //VALHALLA2_PORTALFRAME_H
+#endif //VALHALLA_PORTALFRAME_H

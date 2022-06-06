@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_PORTALACTION_H
-#define VALHALLA2_PORTALACTION_H
+#ifndef VALHALLA_PORTALACTION_H
+#define VALHALLA_PORTALACTION_H
 
 
 #include "../Action.h"
@@ -13,4 +13,4 @@ public:
 };
 
 
-#endif //VALHALLA2_PORTALACTION_H
+#endif //VALHALLA_PORTALACTION_H

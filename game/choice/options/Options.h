@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_OPTIONS_H
-#define VALHALLA2_OPTIONS_H
+#ifndef VALHALLA_OPTIONS_H
+#define VALHALLA_OPTIONS_H
 
 
 #include "../Choice.h"
@@ -28,4 +28,4 @@ public:
 };
 
 
-#endif //VALHALLA2_OPTIONS_H
+#endif //VALHALLA_OPTIONS_H

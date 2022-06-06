@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_GAMESETUP_H
-#define VALHALLA2_GAMESETUP_H
+#ifndef VALHALLA_GAMESETUP_H
+#define VALHALLA_GAMESETUP_H
 
 
 #include "choice/options/Options.h"
@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif //VALHALLA2_GAMESETUP_H
+#endif //VALHALLA_GAMESETUP_H

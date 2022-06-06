@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_MAINMENUFRAME_H
-#define VALHALLA2_MAINMENUFRAME_H
+#ifndef VALHALLA_MAINMENUFRAME_H
+#define VALHALLA_MAINMENUFRAME_H
 
 
 #include "../abstract/BasicGuiFrame.h"
@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif //VALHALLA2_MAINMENUFRAME_H
+#endif //VALHALLA_MAINMENUFRAME_H

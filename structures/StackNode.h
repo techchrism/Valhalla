@@ -1,5 +1,5 @@
-#ifndef VALHALLA2_STACKNODE_H
-#define VALHALLA2_STACKNODE_H
+#ifndef VALHALLA_STACKNODE_H
+#define VALHALLA_STACKNODE_H
 
 template <typename T>
 class StackNode
@@ -15,4 +15,4 @@ public:
     }
 };
 
-#endif //VALHALLA2_STACKNODE_H
+#endif //VALHALLA_STACKNODE_H

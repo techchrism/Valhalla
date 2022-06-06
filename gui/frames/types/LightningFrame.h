@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_LIGHTNINGFRAME_H
-#define VALHALLA2_LIGHTNINGFRAME_H
+#ifndef VALHALLA_LIGHTNINGFRAME_H
+#define VALHALLA_LIGHTNINGFRAME_H
 
 #include "../abstract/BasicGuiFrame.h"
 #include "../util/ConsoleUtil.h"
@@ -20,4 +20,4 @@ public:
 };
 
 
-#endif //VALHALLA2_LIGHTNINGFRAME_H
+#endif //VALHALLA_LIGHTNINGFRAME_H

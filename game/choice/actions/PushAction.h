@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_PUSHACTION_H
-#define VALHALLA2_PUSHACTION_H
+#ifndef VALHALLA_PUSHACTION_H
+#define VALHALLA_PUSHACTION_H
 
 
 #include "../Action.h"
@@ -15,4 +15,4 @@ public:
 };
 
 
-#endif //VALHALLA2_PUSHACTION_H
+#endif //VALHALLA_PUSHACTION_H

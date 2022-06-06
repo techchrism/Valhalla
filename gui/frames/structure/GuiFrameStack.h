@@ -1,5 +1,5 @@
-#ifndef VALHALLA2_GUIFRAMESTACK_H
-#define VALHALLA2_GUIFRAMESTACK_H
+#ifndef VALHALLA_GUIFRAMESTACK_H
+#define VALHALLA_GUIFRAMESTACK_H
 
 
 #include "../../../structures/Stack.h"
@@ -29,4 +29,4 @@ public:
 };
 
 
-#endif //VALHALLA2_GUIFRAMESTACK_H
+#endif //VALHALLA_GUIFRAMESTACK_H

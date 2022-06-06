@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_FRAMETEST_H
-#define VALHALLA2_FRAMETEST_H
+#ifndef VALHALLA_FRAMETEST_H
+#define VALHALLA_FRAMETEST_H
 
 
 #include "../frames/structure/GuiFrame.h"
@@ -22,4 +22,4 @@ public:
 };
 
 
-#endif //VALHALLA2_FRAMETEST_H
+#endif //VALHALLA_FRAMETEST_H

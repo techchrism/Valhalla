@@ -1,3 +1,3 @@
-# Valhalla2
+# Valhalla
 Final Project for Loay
 

@@ -1,6 +1,6 @@
 
-#ifndef VALHALLA2_ACTION_H
-#define VALHALLA2_ACTION_H
+#ifndef VALHALLA_ACTION_H
+#define VALHALLA_ACTION_H
 
 
 #include "../state/GameState.h"
@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif //VALHALLA2_ACTION_H
+#endif //VALHALLA_ACTION_H
