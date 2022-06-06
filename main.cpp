@@ -1,9 +1,6 @@
-#include <iostream>
 #include "structures/Stack.h"
 #include "gui/frames/structure/GuiFrameStack.h"
-#include "gui/test/FrameTest.h"
 #include "gui/frames/types/DemoFrame.h"
-#include "gui/frames/types/PortalFrame.h"
 #include "gui/frames/types/MainMenuFrame.h"
 #include <windows.h>
 
@@ -17,7 +14,7 @@ DWORD WINAPI threadedFunction(LPVOID lpParameter)
     while(!gui->isEmpty())
     {
         // Use the system tick counter to avoid some multithreading pitfalls
-        // (Namely calling functions on an unitialized object)
+        // (Namely calling functions on an uninitialized object)
         DWORD currentTicks = GetTickCount();
         if(currentTicks - ticks >= 1)
         {
@@ -32,6 +29,8 @@ DWORD WINAPI threadedFunction(LPVOID lpParameter)
 
 int main()
 {
+    SetConsoleTitle("Valhalla");
+
     // Basic frame stack for display frames
     GuiFrameStack displayManager;
 
