@@ -114,6 +114,7 @@ bool OptionsFrame::printNextChar()
             }
         }
     }
+    return true;
 }
 
 void OptionsFrame::handleAnimationFrame(unsigned long tick)
